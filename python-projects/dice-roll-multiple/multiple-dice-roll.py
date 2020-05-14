@@ -9,8 +9,8 @@ while again.lower() == 'y':
 	# Validation missing, breaks if character is typed
 	times = input("How many dices do you want to roll? ")
 
-	for i in range(times):
+	for i in range(int(times)):
 	  roll = roll_dice()
-	  print('Roll: {}').format(roll)
+	  print('Roll: {}'.format(roll))
 
-	again = raw_input('Wanna play again? ')
+	again = input('Wanna play again? ')

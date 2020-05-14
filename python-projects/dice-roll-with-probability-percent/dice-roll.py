@@ -16,7 +16,7 @@ while repeat_game:
   
   chance = percent_chance(first_roll, second_roll)
   
-  print('You rolled: {} and {}').format(first_roll, second_roll)
-  print('Probability of throwing any given total: {}').format(chance)
-  # raw_input is python 2.7.x function
-  repeat_game = ('y' or 'yes') in raw_input('Play again? Type y or yes\n').lower()
+  print('You rolled: {} and {}'.format(first_roll, second_roll))
+  print('Probability of throwing this dice total: {}'.format(chance))
+
+  repeat_game = ('y' or 'yes') in input('Play again? Type y or yes\n').lower()
